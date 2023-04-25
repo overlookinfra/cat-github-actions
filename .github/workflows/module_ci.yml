@@ -58,6 +58,7 @@ jobs:
       - name: "Setup ruby"
         uses: "ruby/setup-ruby@v1"
         with:
+          bundler: default
           ruby-version: ${{matrix.ruby_version}}
           bundler-cache: true
 
